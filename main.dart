@@ -70,6 +70,20 @@ class _MyAppState extends State<MyApp> {
     }
   ];
   Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("My First App"),
+        ),
+        body: _questionIndex < _questions.length
+            ? Quiz(
+                pressed: _pressed,
+                questions: _questions,
+                questionIndex: _questionIndex,
+              )
+            : Result(_totalScore, _resetQuiz),
+      ),
+    );
     // @Vasu code here
   }
 }
