@@ -25,7 +25,11 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _resetQuiz() {
-    // @Chahat insert here
+    
+    setState(() {
+      _questionIndex = 0;
+      _totalScore = 0;
+    });
   }
 
   var _questionIndex = 0;
