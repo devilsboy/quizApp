@@ -7,7 +7,11 @@ class Quiz extends StatelessWidget {
   final int questionIndex;
   final Function pressed;
 
-  Quiz(// here @MahekkKapur);
+  Quiz({
+    @required this.questions,
+    @required this.pressed,
+    @required this.questionIndex,
+  });
 
   @override
   Widget build(BuildContext context) {
