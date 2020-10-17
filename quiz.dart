@@ -3,20 +3,14 @@ import './question.dart';
 import './answers.dart';
 
 class Quiz extends StatelessWidget {
-  // here
   final List<Map<String, Object>> questions;
   final int questionIndex;
   final Function pressed;
 
-  Quiz({
-    @required this.questions,
-    @required this.pressed,
-    @required this.questionIndex,
-  });
+  Quiz(// here @MahekkKapur);
 
   @override
   Widget build(BuildContext context) {
-    // Insert quiz code here
     return Column(
       children: <Widget>[
         Question(questions[questionIndex]['questionText']),
